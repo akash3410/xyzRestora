@@ -4,15 +4,11 @@ const DishDetails = ({ selectedDish }) => {
 
   return (
     <div>
-      <Card className="my-2 text-start">
+      <Card className="text-start">
         <CardImg
           alt={selectedDish.name}
           src={selectedDish.image}
-          style={{
-            height: 180
-          }}
-          top
-          width="100%"
+          className='dishDetailImg'
         />
         <CardBody>
           <CardTitle tag="h5">
