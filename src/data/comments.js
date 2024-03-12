@@ -159,6 +159,22 @@ const COMMENTS =
       comment: "It's your birthday, we're gonna party!",
       author: "Rony",
       date: "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      dishId: 3,
+      id: 20,
+      rating: 5,
+      comment: "we're gonna party!",
+      author: "EXTRA",
+      date: "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      dishId: 3,
+      id: 21,
+      rating: 5,
+      comment: "we're gonna party!",
+      author: "EXTRA xtra",
+      date: "2019-12-02T17:57:28.556094Z"
     }
 
   ];

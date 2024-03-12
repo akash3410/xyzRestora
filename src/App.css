@@ -18,9 +18,15 @@
 
 .footer {
   background-color: aliceblue;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin: 0px auto;
+  padding-top: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 10px 0 50px 0;
+  min-height: 400px;
 }

@@ -33,7 +33,7 @@ class Contact extends Component {
     document.title = "Contact"
     return (
       <div className='container'>
-        <div className="row row-content">
+        <div className="row row-content" style={{ paddingLeft: '20px', textAlign: 'left' }}>
           <div className="col-12">
             <h1>Send us your feedback</h1>
           </div>
@@ -118,6 +118,7 @@ class Contact extends Component {
                     type='textarea'
                     name='message'
                     value={this.state.message}
+                    rows="10"
                     onChange={this.handleInputChange}
                   />
                 </Col>

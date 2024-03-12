@@ -1,27 +1,33 @@
 import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 import LoadComments from './LoadComments';
-const DishDetails = ({ selectedDish, comments }) => {
+import CommentForm from './CommentForm';
 
+const DishDetails = props => {
   return (
     <div>
       <Card className="text-start">
         <CardImg
-          alt={selectedDish.name}
-          src={selectedDish.image}
+          alt={props.selectedDish.name}
+          src={props.selectedDish.image}
           className='dishDetailImg'
         />
         <CardBody>
           <CardTitle tag="h5">
-            {selectedDish.name}
+            {props.selectedDish.name}
           </CardTitle>
           <CardText>
-            {selectedDish.description}
+            {props.selectedDish.description}
           </CardText>
           <CardText>
-            {selectedDish.price}/=
+            {props.selectedDish.price}/-
           </CardText>
           <hr />
-          <LoadComments comments={comments} />
+          <LoadComments comments={props.comments} />
+          <hr />
+          <CommentForm
+            dishId={props.selectedDish.id}
+            addComment={props.addComment}
+          />
         </CardBody>
       </Card>
     </div>
